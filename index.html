@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Helena Rentschler">
+        <meta name="description" content="site feito para arquivar textos diversos meus, com o único propósito de aprendizagem">
+        <meta property="og:image" content="/images/pintura.jpg">
+        <meta property="og:description" content="site feito para arquivar textos diversos meus, com o único propósito de aprendizagem">
+        <meta name="twitter:card" content="summary"> <!-- when posting a link to your site on twitter a title, description and image appear-->
+        <meta name="twitter:site" content="@flickr" >
+        <meta name="twitter:title" content="Sei lá blablabla">
+        <meta name="twitter:description" content="site feito para arquivar textos diversos meus, com o único propósito de aprendizagem.">
+        <meta name="twitter:image" content="/images/pintura.jpeg">   
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600&display=swap">
+        <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="scripts/script.js" defer></script>
+        <title>Sei lá blablabla</title>
+    </head>
+    <body>
+        <header id="top">
+            <img src="images/box.png" alt="" width="150" srcset="images/box.svg"> <!--in older browsers, ther 'src' content will be displayed, in new browsers the 'srcset' content will.-->
+            <div>
+                <h1><a href="../index.html"> Sei lá blablabla</a></h1>
+                <p>Este site é um <strong>teste</strong></p>
+            </div>
+            <nav>
+                <button>Sobre</button>
+                <button>Participe</button>
+                <form id="search-bar">
+                    <input type="search" name="q" placeholder="Pesquisar">
+                    <input type="submit" value="ir">
+                </form>
+            </nav>
+            <p><a href="https://github.com/helenarentschler" title="meu perfil no GitHub" target="_blank">GitHub</a></p><!--title appears when u hover(not use it when it's important, cause keyboard and touchscreen users won't get to see it), target = blank opens the link in another tab-->
+            <p><abbr title="Ponta Grossa">PG</abbr></p>
+        </header>
+        <main>
+            <div>
+                <audio controls>
+                    <source src="audios/Cadmium.mp3" type="audio/mp3">
+                    <source src="audios/Cadmium.ogg" type="audio/ogg">
+                    <p>Seu navegador não suporta este formato, aqui está um <a href="audios/Cadmium.mp3">link direto</a> para o áudio.</p>
+                </audio>
+                <article id="first-container">
+                    <h2>Últimas publicações</h2>
+                </article>
+                <article id="sec-container">
+                    <h2>Galeria</h2>
+                    <img id="img-one" src="images/pintura.jpg" alt="pintura de um homem encapuzado com máscara de respiração coberta por fungos com marcas de carvão no braço" width="300"> <!--width is put here according to the size the original size, just to display a blank 300px space if the image doesnt load-->
+                </article>
+                <p>Voltar ao <a href="#top">topo</a>  da página</p>
+            </div>
+            <aside>
+                <h2>Acervo</h2>
+                <h3>Home</h3>
+                <h3>Psicanálise</h3>
+                    <dl>
+                        <dt><a href="pages/article.html">Análise Freudiana das Memórias encobridoras</a></dt>
+                        <dd>Autor: Renan Stelle</dd>
+                    </dl>
+                <h3>Filosofia</h3>
+                    <dl>
+                        <dt><a href="pages/article1.html">Análise do livro "O Mundo de Sofia": Descartes</a></dt>
+                        <dd>Autor: Helena Rentschler</dd>
+                    </dl>
+                <h3>Ciências</h3>
+                    <dl>
+                        <dt><a href="pages/article2.html">Energias Renováveis: Eólica, Geotérmica e Piezoelétrica</a></dt>
+                        <dd>Autor: Helena Rentschler</dd>
+                    </dl>
+            </aside>   
+        </main>
+        <footer>
+            <address>@Copyright 2022 por Helena Rentschler. Todos direitos reservados.</address> <!--fazer página de descrição de cada autor e linkar em seus respecivos arquivos-->
+        </footer>
+    </body>
+</html>

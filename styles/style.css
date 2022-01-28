@@ -1,0 +1,50 @@
+html {
+    color: rgb(0, 0, 0);
+    font-family: 'Domine', serif;
+    background-color: rgb(122, 151, 156);
+}
+
+header {
+    display: flex;
+    background-color: rgb(192, 192, 192);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+}
+
+main {
+    display: flex;
+}
+
+#img-one {
+    width: 300px;
+}
+
+#left-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+#first-container {
+    background-color:chartreuse;
+}
+
+#sec-container {
+    background-color: chocolate;
+}
+
+aside {
+    background-color: cornflowerblue;
+}
+
+footer {
+    background-color: crimson;
+}
+
+iframe {
+    border: none; 
+}
