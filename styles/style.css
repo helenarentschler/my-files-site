@@ -20,10 +20,6 @@ main {
     display: flex;
 }
 
-#img-one {
-    width: 300px;
-}
-
 #left-flex {
     display: flex;
     flex-direction: column;

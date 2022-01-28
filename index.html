@@ -49,7 +49,12 @@
                 </article>
                 <article id="sec-container">
                     <h2>Galeria</h2>
-                    <img id="img-one" src="images/pintura.jpg" alt="pintura de um homem encapuzado com máscara de respiração coberta por fungos com marcas de carvão no braço" width="300"> <!--width is put here according to the size the original size, just to display a blank 300px space if the image doesnt load-->
+                    <!-- Following, responsive design applied to different image sizes-->
+                    <img srcset="images/pintura-100.jpg 100w, 
+                                 images/pintura-300.jpg 300w" 
+                        sizes="(max-width:600px) 100px, 300px"
+                        src="images/pintura-300.jpg" 
+                        alt="pintura de um homem encapuzado com máscara de respiração coberta por fungos com marcas de carvão no braço"> 
                 </article>
                 <p>Voltar ao <a href="#top">topo</a>  da página</p>
             </div>
