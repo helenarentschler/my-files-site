@@ -13,48 +13,56 @@
         <meta name="twitter:title" content="Sei lá blablabla">
         <meta name="twitter:description" content="site feito para arquivar textos diversos meus, com o único propósito de aprendizagem.">
         <meta name="twitter:image" content="/images/pintura.jpeg">   
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600&display=swap">
-        <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/icon.svg" type="image/x-icon">
         <link rel="stylesheet" href="styles/style.css">
         <script src="scripts/script.js" defer></script>
-        <title>Sei lá blablabla</title>
+        <title>Quem perguntou?</title>
     </head>
     <body>
         <header id="top">
-            <img src="images/box.png" alt="" width="150" srcset="images/box.svg"> <!--in older browsers, ther 'src' content will be displayed, in new browsers the 'srcset' content will.-->
-            <div>
-                <h1><a href="../index.html"> Sei lá blablabla</a></h1>
-                <p>Este site é um <strong>teste</strong></p>
-            </div>
+            <a href="../index.html">
+                <img class="logo" src="images/logo.png" alt="" width="300" srcset="images/logo.svg"> <!--in older browsers, ther 'src' content will be displayed, in new browsers the 'srcset' content will.-->
+            </a>
             <nav>
-                <button>Sobre</button>
-                <button>Participe</button>
-                <form id="search-bar">
+                <a class="nav-but" href="pages/sobre.html">Sobre</a>
+                <a class="nav-but" href="pages/opine.html">Opine</a>
+                <form class="search-bar">
                     <input type="search" name="q" placeholder="Pesquisar">
                     <input type="submit" value="ir">
                 </form>
             </nav>
-            <p><a href="https://github.com/helenarentschler" title="meu perfil no GitHub" target="_blank">GitHub</a></p><!--title appears when u hover(not use it when it's important, cause keyboard and touchscreen users won't get to see it), target = blank opens the link in another tab-->
-            <p><abbr title="Ponta Grossa">PG</abbr></p>
+            <p><a class="nav-but" href="https://github.com/helenarentschler" title="meu perfil no GitHub" target="_blank">GitHub</a></p><!--title appears when u hover(not use it when it's important, cause keyboard and touchscreen users won't get to see it), target = blank opens the link in another tab-->
         </header>
         <main>
-            <div>
+            <div class="content">
                 <audio controls>
                     <source src="audios/Cadmium.mp3" type="audio/mp3">
                     <source src="audios/Cadmium.ogg" type="audio/ogg">
                     <p>Seu navegador não suporta este formato, aqui está um <a href="audios/Cadmium.mp3">link direto</a> para o áudio.</p>
                 </audio>
+                <h1>Últimas publicações</h1>
                 <section id="first-container">
-                    <h2>Últimas publicações</h2>
+                    <div>
+                        <h3>Experimento: A reflexão total da luz e a fibra óptica</h3>
+                        <p>Em um painel óptico, observou-se a incidência de um feixe de luz no dioptro de acrílico passando para o ar, com um aumento no ângulo de incidência até um limite crítico em que a refração foi rasante.</p>
+                    </div>
+                    <div>
+                        <h3>Energias Renováveis: Eólica, Geotérmica e Piezoelétrica</h3>
+                        <p>Apresentação do artigo escrito para a disciplina de Introdução a Engenharia Civil.</p>
+                    </div>
                 </section>
+                <h1>Galeria</h1>
                 <section id="sec-container">
-                    <h2>Galeria</h2>
                     <!-- Following, responsive design applied to different image sizes-->
                     <img srcset="images/pintura-100.jpg 100w, 
                                  images/pintura-300.jpg 300w" 
                         sizes="(max-width:600px) 100px, 300px"
                         src="images/pintura-300.jpg" 
                         alt="pintura de um homem encapuzado com máscara de respiração coberta por fungos com marcas de carvão no braço"> 
+                    <a href="pages/article.html#freud" title="do artigo: 'Análise Freudiana das Memórias encobridoras'">
+                        <img src="images/freud2.jpg" alt="">
+                    </a>
                 </section> 
             </div>
             <aside>
