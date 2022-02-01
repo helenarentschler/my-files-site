@@ -5,6 +5,12 @@ html {
   background-color: #4b1a1a;
 }
 
+@media (max-width: 500px) {
+  html {
+    font-size: 20px;
+  }
+}
+
 body {
   margin: 0;
 }
