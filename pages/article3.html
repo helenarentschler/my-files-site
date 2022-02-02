@@ -14,7 +14,7 @@
             <a href="../index.html">
                 <img class="logo" src="../images/logo.png" alt="" width="300" srcset="../images/logo.svg"> <!--in older browsers, ther 'src' content will be displayed, in new browsers the 'srcset' content will.-->
             </a>
-            <nav>
+            <nav class="nav-bar">
                 <a class="nav-but" href="sobre.html">Sobre</a>
                 <a class="nav-but" href="opine.html">Opine</a>
                 <form class="search-bar">
@@ -22,7 +22,10 @@
                     <input type="submit" value="ir">
                 </form>
             </nav>
-            <p><a class="nav-but" href="https://github.com/helenarentschler" title="meu perfil no GitHub" target="_blank">GitHub</a></p>
+            <a id="github" href="https://github.com/helenarentschler" title="meu perfil no GitHub" target="_blank">
+                <span>GitHub</span>
+                <img src="../images/redirect.png" alt="" width="27" srcset="../images/redirect.svg">
+            </a><!--title appears when u hover(not use it when it's important, cause keyboard and touchscreen users won't get to see it), target = blank opens the link in another tab-->
         </header>
         <main>
             <article class="content">
