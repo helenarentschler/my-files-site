@@ -3,7 +3,7 @@ html {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   box-sizing: border-box;
-  background-color: #4b1a1a;
+  background-color: #331f1f ;
 }
 
 *, *::before, *::after {
@@ -98,6 +98,7 @@ body {
 
       .nav-but:hover {
         transform: scale3d(1.15, 1.15, 1.15);
+        border-bottom: 3px solid #e26363;
       }
 
       .content { /**provisório**/
@@ -173,12 +174,19 @@ body {
           transform: scale3d(1.1, 1.1, 1.1);
         }
 
+        #first-container > h2 {
+          writing-mode: vertical-lr;
+          text-align: center;
+          margin: -20px 10px;
+          background-color: #e26363;
+        }
+
         #about-box {
           color: #2D2727;
           padding: 20px;
           border-radius: 20px;
           background-color: rgba(217,217,217,1);
-          background: url(../images/logo.svg) no-repeat bottom 40px right 40px,
+          background: url(../images/logo.svg) no-repeat bottom 50px right 50px/30%,
                       linear-gradient(180deg, rgba(226,99,99,1) 1%, rgba(217,217,217,1) 53%) fixed;
         }
 
