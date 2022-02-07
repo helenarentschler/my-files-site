@@ -1,2 +1,3 @@
-# my-files-site
- This site stores some of my files and allows anyone to navigate through them. It was made with the only goal of learning web development.
+# quemperguntou
+Este site é uma pequena biblioteca que guarda alguns arquivos meus. Você pode navegar por eles pelo menu à direita.
+Linguagens utilizadas: HTML, CSS e JavaScript
