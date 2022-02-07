@@ -1,9 +1,9 @@
 html {
-  color: #e8eaed;
+  color: rgba(217, 217, 217, 1);
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   box-sizing: border-box;
-  background-color: #331f1f ;
+  background-color: rgba(51, 31, 31, 1) ;
 }
 
 *, *::before, *::after {
@@ -26,11 +26,11 @@ body {
 
   header {
     display: flex;
-    color: #2D2727;
-    height: 20vh;
+    color: rgba(45, 39, 39, 1);
+    height: 120px;
     padding: 20px;
     margin: 0;
-    background-color: #D9D9D9;
+    background-color: rgba(217, 217, 217, 1);
   }
 
   nav {
@@ -47,15 +47,15 @@ body {
     border-radius: 20px;
     margin-left: 20px;
     overflow: hidden auto;
-    background-color: rgba(45,39,39,1);
-    background: linear-gradient(180deg, rgba(45,39,39,1) 11%, rgba(69,69,69,1) 100%) fixed; 
+    background-color: rgba(45, 39, 39, 1);
+    background: linear-gradient(180deg, rgba(45, 39, 39, 1) 11%, rgba(69 ,69, 69, 1) 100%) fixed; 
   }
 
   footer {
-    color: #2D2727;
+    color: rgba(45, 39, 39, 1);
     height: 120px;
     padding: 20px;
-    background-color: #D9D9D9;
+    background-color: rgba(217, 217, 217, 1);
   }
 
 /* basic elements*/
@@ -94,12 +94,12 @@ body {
         padding: 10px;
         border-radius: 10px;
         text-align: center;
-        background-color: #2D2727;
+        background-color: rgba(45, 39, 39, 1);
       }
 
       .nav-but:hover {
         transform: scale3d(1.15, 1.15, 1.15);
-        border-bottom: 3px solid #e26363;
+        border-bottom: 3px solid rgba(226, 99, 99, 1);
       }
 
       .content { /**provisório**/
@@ -107,17 +107,17 @@ body {
       }
 
       input[type=search] {
-        color: #D9D9D9;
+        color: rgba(217, 217, 217, 1);
         font-family: inherit;
         width: 80%;
         padding: 5px 80px 5px 15px;
         border: none;
         border-radius: 15px;
-        background-color: #2D2727;
+        background-color: rgba(45, 39, 39, 1);
       }
 
       input[type=search]:focus {
-        outline: solid #e26363;
+        outline: solid rgba(226, 99, 99, 1);
       }
 
       input[type=submit] {
@@ -129,7 +129,7 @@ body {
       }
 
       a:link, a:visited {
-        color: #e26363;
+        color: rgba(226, 99, 99, 1);
       }
 
       a:hover {
@@ -141,7 +141,7 @@ body {
       }
 
       aside a:hover {
-        color: rgb(255, 24, 24);
+        color: rgba(208, 19, 19, 1);
       }
 
 /* ID's */
@@ -151,19 +151,19 @@ body {
           font-weight: bold;
           font-style: italic;
           font-size: 24px;
-          color: #2D2727;
+          color: rgba(45, 39, 39, 1);
         }
 
         #github:hover {
-          color: #e26363;
+          color: rgba(226, 99, 99, 1);
         }
 
         #first-container, #sec-container{
           display: flex;
           padding: 20px;
           border-radius: 20px;
-          background-color: rgba(45,39,39,1);
-          background: linear-gradient(180deg, rgba(45,39,39,1) 11%, rgba(69,69,69,1) 100%) fixed; 
+          background-color: rgba(45, 39, 39, 1);
+          background: linear-gradient(180deg, rgba(45, 39, 39, 1) 11%, rgba(69, 69, 69, 1) 100%) fixed; 
         }
 
         #sec-container img {
@@ -171,7 +171,7 @@ body {
         }
 
         #sec-container img:hover {
-          box-shadow: 7px 7px 7px #D9D9D9;
+          box-shadow: 7px 7px 7px rgba(217, 217, 217, 1);
           transform: scale3d(1.1, 1.1, 1.1);
         }
 
@@ -179,16 +179,16 @@ body {
           writing-mode: vertical-lr;
           text-align: center;
           margin: -20px 10px;
-          background-color: #e26363;
+          background-color: rgba(226, 99, 99, 1);
         }
 
         #about-box {
-          color: #2D2727;
+          color: rgba(45, 39, 39, 1);
           padding: 20px;
           border-radius: 20px;
-          background-color: rgba(217,217,217,1);
+          background-color: rgba(217, 217, 217, 1);
           background: url(../images/logo.svg) no-repeat bottom 50px right 50px/30%,
-                      linear-gradient(180deg, rgba(226,99,99,1) 1%, rgba(217,217,217,1) 53%) fixed;
+                      linear-gradient(180deg, rgba(226, 99, 99, 1) 1%, rgba(217, 217, 217, 1) 53%) fixed;
         }
 
         #about-box ul {
@@ -199,10 +199,10 @@ body {
 
 table {
     border-collapse: collapse;
-    border: 2px solid rgb(200,200,200);
+    border: 2px solid rgba(200, 200, 200, 1);
     letter-spacing: 1px;
     font-size: 0.8rem;
-    color: #2D2727;
+    color: rgba(45, 39, 39, 1);
   }
   
   td, th {
