@@ -12,7 +12,7 @@ html {
 
 @media (max-width: 500px) {
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -86,7 +86,7 @@ body {
 /* classes, atributtes, pseudo-classes */
 
       .logo {
-        max-width: 300px;
+        max-width: 80%;
         margin: 0;
       }
 
@@ -118,7 +118,7 @@ body {
         font-family: inherit;
         width: 80%;
         padding-block: 4px;
-        padding-inline: 20px;
+        padding-inline: 40px;
         border: none;
         border-radius: 15px;
         background-color: rgba(45, 39, 39, 1);
@@ -155,12 +155,12 @@ body {
 /* ID's */
 
         #github {
+          color: rgba(45, 39, 39, 1);
           display: inline-block;
           font-family: 'Lobster Two', cursive;
           font-weight: bold;
           font-style: italic;
           font-size: 1.5rem;
-          color: rgba(45, 39, 39, 1);
         }
 
         #github:hover {
