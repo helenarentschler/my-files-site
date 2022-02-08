@@ -1,9 +1,9 @@
 html {
   color: rgba(217, 217, 217, 1);
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   box-sizing: border-box;
-  background-color: rgba(51, 31, 31, 1) ;
+  background-color: rgb(190,190,190);
 }
 
 *, *::before, *::after {
@@ -12,7 +12,7 @@ html {
 
 @media (max-width: 500px) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -20,6 +20,7 @@ body {
   min-height: 100vh;
   max-width: 1400px;
   margin: 0 auto;
+  background-color: rgba(51, 31, 31, 1) ;
 }
 
 /* basic structural elements */
@@ -27,8 +28,9 @@ body {
   header {
     display: flex;
     color: rgba(45, 39, 39, 1);
-    height: 120px;
-    padding: 20px;
+    max-height: 120px;
+    width: 100%;
+    padding: 2%;
     margin: 0;
     background-color: rgba(217, 217, 217, 1);
   }
@@ -38,23 +40,25 @@ body {
   }
 
   main {
+    width: 100%;
     display: flex;
-    padding: 20px;
+    padding: 2%;
   }
 
   aside {
-    padding: 20px;
+    width:30%;
+    padding: 2%;
     border-radius: 20px;
-    margin-left: 20px;
-    overflow: hidden auto;
+    margin-left: 2%;
+    overflow: auto;
     background-color: rgba(45, 39, 39, 1);
     background: linear-gradient(180deg, rgba(45, 39, 39, 1) 11%, rgba(69 ,69, 69, 1) 100%) fixed; 
   }
 
   footer {
     color: rgba(45, 39, 39, 1);
-    height: 120px;
-    padding: 20px;
+    max-height: 120px;
+    padding: 2%;
     background-color: rgba(217, 217, 217, 1);
   }
 
@@ -62,13 +66,13 @@ body {
 
     h1 {
       font-family: 'Lobster Two', cursive;
-      font-size: 36px;
-      padding: 15px;
+      font-size: 2.2rem;
+      padding: 2%;
       margin: 0;
     }
 
     h1 + p {
-      margin-left: 30px;
+      margin-left: 2%;
     }
 
     iframe {
@@ -79,16 +83,16 @@ body {
 /* classes, atributtes, pseudo-classes */
 
       .logo {
-        width: 300px;
-        margin: 5px 60px 5px 10px;
+        max-width: 300px;
+        margin: 0;
       }
 
       .nav-bar > * { /* selecting all the direct children of .nav-bar */
-        margin-right: 40px;
+        margin-right: 10%;
       }
 
       .nav-but {
-        display: inline-block; /* does not break line, but act as a block elemnt*/
+        display: inline-block; /* does not break line, but act as a block element*/
         width: 80px;
         height: 40px;
         padding: 10px;
@@ -102,15 +106,16 @@ body {
         border-bottom: 3px solid rgba(226, 99, 99, 1);
       }
 
-      .content { /**provisório**/
-        width: 1000px;
+      .content {
+        width: 70%;
       }
 
       input[type=search] {
         color: rgba(217, 217, 217, 1);
         font-family: inherit;
         width: 80%;
-        padding: 5px 80px 5px 15px;
+        padding-block: 4px;
+        padding-inline: 20px;
         border: none;
         border-radius: 15px;
         background-color: rgba(45, 39, 39, 1);
@@ -147,10 +152,11 @@ body {
 /* ID's */
 
         #github {
+          display: inline-block;
           font-family: 'Lobster Two', cursive;
           font-weight: bold;
           font-style: italic;
-          font-size: 24px;
+          font-size: 1.5rem;
           color: rgba(45, 39, 39, 1);
         }
 
@@ -160,35 +166,36 @@ body {
 
         #first-container, #sec-container{
           display: flex;
-          padding: 20px;
+          padding: 2%;
           border-radius: 20px;
           background-color: rgba(45, 39, 39, 1);
           background: linear-gradient(180deg, rgba(45, 39, 39, 1) 11%, rgba(69, 69, 69, 1) 100%) fixed; 
         }
 
         #sec-container img {
-          margin-right: 20px;
+          margin-right: 2%;
         }
 
         #sec-container img:hover {
-          box-shadow: 7px 7px 7px rgba(217, 217, 217, 1);
+          box-shadow: 6px 6px 6px rgba(217, 217, 217, 1);
           transform: scale3d(1.1, 1.1, 1.1);
         }
 
         #first-container > h2 {
           writing-mode: vertical-lr;
           text-align: center;
-          margin: -20px 10px;
+          border-radius: 10px;
+          margin-block: 2%;
           background-color: rgba(226, 99, 99, 1);
         }
 
         #about-box {
           color: rgba(45, 39, 39, 1);
-          padding: 20px;
+          padding: 2%;
           border-radius: 20px;
           background-color: rgba(217, 217, 217, 1);
           background: url(../images/logo.svg) no-repeat bottom 50px right 50px/30%,
-                      linear-gradient(180deg, rgba(226, 99, 99, 1) 1%, rgba(217, 217, 217, 1) 53%) fixed;
+                      linear-gradient(180deg, rgb(255, 194, 194) 1%, rgba(217, 217, 217, 1) 53%) fixed;
         }
 
         #about-box ul {
