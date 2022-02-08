@@ -79,6 +79,9 @@ body {
       border: none; /* iframe vem com borda pre-definida, que não é desejável*/
     }
 
+    img, object, iframe, video {
+      max-width: 100%;
+    }
 
 /* classes, atributtes, pseudo-classes */
 
@@ -166,6 +169,7 @@ body {
 
         #first-container, #sec-container{
           display: flex;
+          overflow: hidden;
           padding: 2%;
           border-radius: 20px;
           background-color: rgba(45, 39, 39, 1);
