@@ -1,6 +1,7 @@
 html {
   color: rgba(217, 217, 217, 1);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Helvetica, arial, sans-serif;
+  font-weight: 400;
   font-size: 16px;
   box-sizing: border-box;
   background-color: rgb(190,190,190);
@@ -66,7 +67,7 @@ body {
 /* basic elements*/
 
     h1 {
-      font-family: 'Lobster Two', cursive;
+      font-family: 'Lobster two', 'Brush Script MT', cursive;
       font-size: 2.2rem;
       padding: 2%;
       margin: 0;
@@ -109,11 +110,11 @@ body {
 
       .logo {
         display: flex;
-        font-family: 'Lobster Two', cursive;
+        font-family: 'Lobster two', 'Brush Script MT', cursive;
         font-style: italic;
         font-weight: bold;
-        font-size: 2.5vw;
-        margin-inline-end: 5%;
+        font-size: 2rem;
+        margin-inline-end: 5%; 
       }
 
       .logo span {
@@ -122,7 +123,7 @@ body {
 
       .subheading {
         font-weight: 500;
-        font-size: 1.5vw;
+        font-size: 1.2rem;
       }
 
       .logo:link, .logo:visited {
@@ -131,6 +132,7 @@ body {
 
       .nav-bar > * { /* selecting all the direct children of .nav-bar */
         margin-right: 10%;
+        margin-block: auto; /* align vertically */
       }
 
       .nav-but {
@@ -155,7 +157,7 @@ body {
       input[type=search] {
         color: rgba(217, 217, 217, 1);
         font-family: inherit;
-        font-size: 1vw;
+        font-size: 0.8rem;
         width: 80%;
         padding-block: 4px;
         padding-inline: 50px;
@@ -177,7 +179,7 @@ body {
       }
 
       a:link, a:visited {
-        color: rgb(228, 115, 115);
+        color: rgb(230, 138, 138);
       }
 
       a:hover {
@@ -188,12 +190,8 @@ body {
         text-decoration: none;
       }
 
-      aside a:link, aside a:visited {
-        color: rgba(217, 217, 217, 1);
-      }
-
       aside a:hover {
-        color: rgb(248, 136, 136);
+        color: rgb(255, 79, 79);
       }
 
 /* ID's */
@@ -201,10 +199,11 @@ body {
         #github {
           color: rgba(45, 39, 39, 1);
           display: inline-block;
-          font-family: 'Lobster Two', cursive;
+          font-family: 'Lobster two', 'Brush Script MT', cursive;
           font-weight: bold;
           font-style: italic;
           font-size: 1.5rem;
+          margin-block: auto; /* align vertically */
         }
 
         #github:hover {
@@ -238,12 +237,11 @@ body {
         }
 
         #about-box {
-          color: rgba(45, 39, 39, 1);
           padding: 2%;
           border-radius: 20px;
           background-color: rgba(217, 217, 217, 1);
-          background: url(../images/logo.svg) no-repeat bottom 50px right 50px/30%,
-                      linear-gradient(180deg, rgb(255, 194, 194) 1%, rgba(217, 217, 217, 1) 53%) fixed;
+          background: url(../images/icon.svg) no-repeat bottom 50px right 50px/15%,
+                      linear-gradient(180deg, rgb(70, 22, 29) 11%, rgba(69 ,69, 69, 1) 100%) fixed; 
         }
 
         #about-box ul {
