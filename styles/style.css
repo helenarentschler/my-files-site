@@ -20,7 +20,7 @@ body {
   min-height: 100vh;
   max-width: 1400px;
   margin: 0 auto;
-  background-color: rgba(51, 31, 31, 1) ;
+  background-color: rgb(34, 33, 33) ;
 }
 
 /* basic structural elements */
@@ -53,7 +53,7 @@ body {
     margin-left: 2%;
     overflow: auto;
     background-color: rgba(45, 39, 39, 1);
-    background: linear-gradient(180deg, rgba(45, 39, 39, 1) 11%, rgba(69 ,69, 69, 1) 100%) fixed; 
+    background: linear-gradient(180deg, rgb(70, 22, 29) 11%, rgba(69 ,69, 69, 1) 100%) fixed; 
   }
 
   footer {
@@ -138,7 +138,7 @@ body {
         width: 80px;
         height: 40px;
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 7px;
         text-align: center;
         background-color: rgba(45, 39, 39, 1);
       }
@@ -155,6 +155,7 @@ body {
       input[type=search] {
         color: rgba(217, 217, 217, 1);
         font-family: inherit;
+        font-size: 1vw;
         width: 80%;
         padding-block: 4px;
         padding-inline: 50px;
@@ -176,7 +177,7 @@ body {
       }
 
       a:link, a:visited {
-        color: rgba(226, 99, 99, 1);
+        color: rgb(228, 115, 115);
       }
 
       a:hover {
@@ -187,8 +188,12 @@ body {
         text-decoration: none;
       }
 
+      aside a:link, aside a:visited {
+        color: rgba(217, 217, 217, 1);
+      }
+
       aside a:hover {
-        color: rgba(208, 19, 19, 1);
+        color: rgb(248, 136, 136);
       }
 
 /* ID's */
@@ -212,7 +217,7 @@ body {
           padding: 2%;
           border-radius: 20px;
           background-color: rgba(45, 39, 39, 1);
-          background: linear-gradient(180deg, rgba(45, 39, 39, 1) 11%, rgba(69, 69, 69, 1) 100%) fixed; 
+          background: linear-gradient(180deg, rgb(70, 22, 29)11%, rgba(69, 69, 69, 1) 100%) fixed; 
         }
 
         #sec-container img {
