@@ -46,7 +46,8 @@ body {
   }
 
   aside {
-    width:30%;
+    width:32%;
+    height: 100%;
     padding: 2%;
     border-radius: 20px;
     margin-left: 2%;
@@ -79,15 +80,53 @@ body {
       border: none; /* iframe vem com borda pre-definida, que não é desejável*/
     }
 
-    img, object, iframe, video {
+    img, object, iframe, video, audio {
       max-width: 100%;
+    }
+
+    /* form reset */
+
+    button,
+    input,
+    select,
+    textarea {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+
+    textarea {
+    overflow: auto;
+    }
+
+    header a {
+      display: block;
     }
 
 /* classes, atributtes, pseudo-classes */
 
       .logo {
-        max-width: 80%;
-        margin: 0;
+        display: flex;
+        font-family: 'Lobster Two', cursive;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 2.5vw;
+        margin-inline-end: 5%;
+      }
+
+      .logo span {
+        display: block;
+      }
+
+      .subheading {
+        font-weight: 500;
+        font-size: 1.5vw;
+      }
+
+      .logo:link, .logo:visited {
+        color: rgba(45, 39, 39, 1);
       }
 
       .nav-bar > * { /* selecting all the direct children of .nav-bar */
@@ -110,7 +149,7 @@ body {
       }
 
       .content {
-        width: 70%;
+        width: 68%;
       }
 
       input[type=search] {
@@ -118,7 +157,7 @@ body {
         font-family: inherit;
         width: 80%;
         padding-block: 4px;
-        padding-inline: 40px;
+        padding-inline: 50px;
         border: none;
         border-radius: 15px;
         background-color: rgba(45, 39, 39, 1);
