@@ -36,8 +36,13 @@ body {
     background-color: rgba(217, 217, 217, 1);
   }
 
+  header > * {
+    margin-right: 5%;
+    margin-block: auto; /* align vertically */
+  }
+
   nav {
-    display: flex;
+    width: 20%;
   }
 
   main {
@@ -68,8 +73,7 @@ body {
 /* basic elements*/
 
     h1 {
-      font-family: 'Lobster two', 'Brush Script MT', cursive;
-      font-size: 2.2rem;
+      font: 2.2rem 'Lobster two', 'Brush Script MT', cursive;
       padding: 2%;
       margin: 0;
     }
@@ -107,12 +111,20 @@ body {
       display: block;
     }
 
+    header li {
+      list-style: none;
+    }
+
 /* classes, atributtes, pseudo-classes */
 
       .logo {
         display: flex;
         font: italic bold 2rem 'Lobster two', 'Brush Script MT', cursive;
-        margin-inline-end: 5%; 
+      }
+
+      .logo img {
+        width: 20%;
+        margin-right: 5%;
       }
 
       .logo span {
@@ -128,44 +140,52 @@ body {
         color: rgba(45, 39, 39, 1);
       }
 
-      .nav-bar > * { /* selecting all the direct children of .nav-bar */
-        margin-right: 10%;
-        margin-block: auto; /* align vertically */
+      .nav-bar {
+        display: flex;
+        padding: 0;
       }
 
       .nav-but {
         display: inline-block; /* does not break line, but act as a block element*/
-        width: 80px;
+        width: 40%;
         height: 40px;
-        padding: 10px;
+        padding-block: 4%;
         border-radius: 7px;
+        margin-inline-end: 20%;
         text-align: center;
         background-color: rgba(45, 39, 39, 1);
       }
 
-      .nav-but:hover {
+      .nav-but:hover, .nav-but:focus {
         transform: scale3d(1.15, 1.15, 1.15);
         border-bottom: 3px solid rgba(226, 99, 99, 1);
+      }
+
+      .nav-but:active {
+        background-color: rgb(190,190,190);
       }
 
       .content {
         width: 68%;
       }
 
+      form {
+        width: 25%;
+      }
+
       input[type=search] {
         color: rgba(217, 217, 217, 1);
         font-family: inherit;
         font-size: 0.8rem;
+        padding: 4px 0 4px 10px;
         width: 80%;
-        padding-block: 4px;
-        padding-inline: 50px;
         border: none;
         border-radius: 15px;
         background-color: rgba(45, 39, 39, 1);
       }
 
-      input[type=search]:focus {
-        outline: solid rgba(226, 99, 99, 1);
+      input[type=search]:hover, input[type=search]:focus {
+        outline: 2px solid rgba(226, 99, 99, 1);
       }
 
       input[type=submit] {
@@ -180,16 +200,24 @@ body {
         color: rgb(230, 138, 138);
       }
 
-      a:hover {
+      a:hover, a:focus {
         text-decoration: none;
+      }
+
+      a:active {
+        color: rgb(190,190,190);
       }
 
       header a:link, header a:visited, aside a:link, aside a:visited{
         text-decoration: none;
       }
 
-      aside a:hover {
+      aside a:hover, aside a:focus {
         color: rgb(255, 79, 79);
+      }
+
+      aside a:active {
+        color: rgba(45, 39, 39, 1);
       }
 
 /* ID's */
@@ -197,11 +225,11 @@ body {
         #github {
           color: rgba(45, 39, 39, 1);
           display: inline-block;
-          font-family: 'Lobster two', 'Brush Script MT', cursive;
-          font-weight: bold;
-          font-style: italic;
-          font-size: 1.5rem;
+          font: italic bold 1.5rem 'Lobster two', 'Brush Script MT', cursive;
+          width: 7%;
           margin-block: auto; /* align vertically */
+          background: url(../images/redirect.png) no-repeat 100% 0;
+          background-size: 16px 16px;
         }
 
         #github:hover {
@@ -221,7 +249,7 @@ body {
           margin-right: 2%;
         }
 
-        #sec-container img:hover {
+        #sec-container img:hover, #sec-container img:focus {
           box-shadow: 6px 6px 6px rgba(217, 217, 217, 1);
           transform: scale3d(1.1, 1.1, 1.1);
         }
