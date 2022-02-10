@@ -1,6 +1,23 @@
+@font-face {
+  font-family: 'lobster_tworegular';
+  src: url('../fonts/lobstertwo-regular-webfont.woff2') format('woff2'),
+       url('../fonts/lobstertwo-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+       url('../fonts/roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   color: rgba(217, 217, 217, 1);
-  font-family: 'Roboto', Helvetica, arial, sans-serif;
+  font-family: robotoregular, Helvetica, arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   box-sizing: border-box;
@@ -73,7 +90,7 @@ body {
 /* basic elements*/
 
     h1 {
-      font: 2.2rem 'Lobster two', 'Brush Script MT', cursive;
+      font: 2.2rem lobster_tworegular, 'Brush Script MT', cursive;
       padding: 2%;
       margin: 0;
     }
@@ -112,7 +129,7 @@ body {
       .logo {
         display: flex;
         width: 25%;
-        font: italic bold 2rem 'Lobster two', 'Brush Script MT', cursive;
+        font: italic bold 2rem lobster_tworegular, 'Brush Script MT', cursive;
       }
 
       .logo img {
@@ -222,7 +239,7 @@ body {
         #github {
           color: rgba(45, 39, 39, 1);
           display: inline-block;
-          font: italic bold 1.5rem 'Lobster two', 'Brush Script MT', cursive;
+          font: italic bold 1.5rem lobster_tworegular, 'Brush Script MT', cursive;
           width: 7%;
           margin-block: auto; /* align vertically */
           background: url(../images/redirect.png) no-repeat 100% 0;
