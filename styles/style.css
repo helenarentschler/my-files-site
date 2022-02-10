@@ -17,9 +17,7 @@
 
 html {
   color: rgba(217, 217, 217, 1);
-  font-family: robotoregular, Helvetica, arial, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  font: 16px robotoregular, Helvetica, arial, sans-serif;
   box-sizing: border-box;
   background-color: rgb(190,190,190);
 }
@@ -41,10 +39,12 @@ body {
   background-color: rgb(34, 33, 33) ;
 }
 
-/* basic structural elements */
+  /* basic structural elements */
 
   header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
     color: rgba(45, 39, 39, 1);
     max-height: 120px;
     width: 100%;
@@ -54,13 +54,9 @@ body {
   }
 
   header > * {
-    margin-right: 5%;
     margin-block: auto; /* align vertically */
   }
 
-  nav {
-    width: 30%;
-  }
 
   main {
     display: flex;
@@ -87,7 +83,7 @@ body {
     background-color: rgba(217, 217, 217, 1);
   }
 
-/* basic elements*/
+    /* basic elements*/
 
     h1 {
       font: 2.2rem lobster_tworegular, 'Brush Script MT', cursive;
@@ -124,25 +120,21 @@ body {
     overflow: auto;
     }
 
-/* classes, atributtes, pseudo-classes */
+      /* classes, atributtes, pseudo-classes */
 
       .logo {
         display: flex;
-        width: 25%;
         font: italic bold 2rem lobster_tworegular, 'Brush Script MT', cursive;
       }
 
       .logo img {
-        width: 20%;
-        margin-right: 5%;
-      }
-
-      .logo span {
-        display: block;
+        max-width: 20%;
+        margin-right: 4px;
       }
 
       .subheading {
-        font-weight: 500;
+        display: block;
+        font-weight: 300;
         font-size: 1.2rem;
       }
 
@@ -152,20 +144,16 @@ body {
 
       .nav-bar {
         padding: 0;
-        width: 100%;
-      }
-
-      .nav-bar li {
-        display: inline;
+        display: flex;
+        list-style: none;
       }
 
       .nav-but {
-        display: inline-block;
+        flex: 1;
         width: 25%;
         height: 40px;
         padding-block: 10px;
         border-radius: 7px;
-        margin-right: 5%;
         text-align: center;
         background-color: rgba(45, 39, 39, 1);
       } 
@@ -179,12 +167,19 @@ body {
         background-color: rgb(190,190,190);
       }
 
-      .content {
-        width: 68%;
+      .github {
+        color: rgba(45, 39, 39, 1);
+        font: italic bold 1.5rem lobster_tworegular, 'Brush Script MT', cursive;
+        background: url(../images/redirect.png) no-repeat 28% 0;
+        background-size: 16px 16px;
       }
 
-      form {
-        width: 20%;
+      .github:hover {
+        color: rgba(226, 99, 99, 1);
+      }
+
+      .content {
+        width: 68%;
       }
 
       input[type=search] {
@@ -236,20 +231,6 @@ body {
 
 /* ID's */
 
-        #github {
-          color: rgba(45, 39, 39, 1);
-          display: inline-block;
-          font: italic bold 1.5rem lobster_tworegular, 'Brush Script MT', cursive;
-          width: 7%;
-          margin-block: auto; /* align vertically */
-          background: url(../images/redirect.png) no-repeat 100% 0;
-          background-size: 16px 16px;
-        }
-
-        #github:hover {
-          color: rgba(226, 99, 99, 1);
-        }
-
         #first-container, #sec-container{
           display: flex;
           overflow: hidden;
@@ -287,6 +268,14 @@ body {
         #about-box ul {
           list-style: none;
         }
+
+
+
+
+
+
+
+
 
 /* Design pronto para tabela */
 
