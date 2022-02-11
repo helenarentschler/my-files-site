@@ -6,7 +6,6 @@
   font-style: normal;
 }
 
-
 @font-face {
   font-family: 'robotoregular';
   src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
@@ -42,21 +41,22 @@ body {
   /* basic structural elements */
 
   header {
+    position: sticky;
+    top: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 50px;
+    grid-gap: 60px;
     color: rgba(45, 39, 39, 1);
-    max-height: 120px;
+    max-height: 100px;
     width: 100%;
-    padding: 2%;
+    padding: 0.5%;
     margin: 0;
-    background-color: rgba(217, 217, 217, 1);
+    background-color: rgba(217, 217, 217, 0.9);
   }
 
   header > * {
     margin-block: auto; /* align vertically */
   }
-
 
   main {
     display: flex;
@@ -120,22 +120,28 @@ body {
     overflow: auto;
     }
 
+    /*************/
+
+    form {
+      position: relative; /* to set the form input's position relative to the form*/
+    }
+
       /* classes, atributtes, pseudo-classes */
 
       .logo {
         display: flex;
-        font: italic bold 2rem lobster_tworegular, 'Brush Script MT', cursive;
+        font: italic bold 1.7rem lobster_tworegular, 'Brush Script MT', cursive;
       }
 
       .logo img {
-        max-width: 20%;
-        margin-right: 4px;
+        max-width: 18%;
+        margin-inline: 15px;
       }
 
       .subheading {
         display: block;
         font-weight: 300;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
 
       .logo:link, .logo:visited {
@@ -145,14 +151,12 @@ body {
       .nav-bar {
         padding: 0;
         display: flex;
+        justify-content: space-around;
         list-style: none;
       }
 
       .nav-but {
-        flex: 1;
-        width: 25%;
-        height: 40px;
-        padding-block: 10px;
+        padding: 10px 10px;
         border-radius: 7px;
         text-align: center;
         background-color: rgba(45, 39, 39, 1);
@@ -160,7 +164,6 @@ body {
 
       .nav-but:hover, .nav-but:focus {
         transform: scale(1.15, 1.15);
-        border-bottom: 3px solid rgba(226, 99, 99, 1);
       }
 
       .nav-but:active {
@@ -186,8 +189,10 @@ body {
         color: rgba(217, 217, 217, 1);
         font-family: inherit;
         font-size: 0.8rem;
-        padding: 4px 0 4px 10px;
-        width: 80%;
+        min-width: 100px;
+        width: 100%;
+        padding-left: 10px;
+        padding-block: 4px;
         border: none;
         border-radius: 15px;
         background-color: rgba(45, 39, 39, 1);
@@ -198,11 +203,12 @@ body {
       }
 
       input[type=submit] {
-        width: 20%;
-        padding: 5px;
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        width: 23px;
         border: none;
-        float: right;
-        background: url(../images/search.svg) 0 0 no-repeat;;
+        background: url(../images/search.svg) 0 0 no-repeat;
       }
 
       a:link, a:visited {
