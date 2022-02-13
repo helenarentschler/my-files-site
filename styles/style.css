@@ -34,6 +34,7 @@ html {
 body {
   min-height: 100vh;
   max-width: 1400px;
+  line-height: 1.6;
   margin: 0 auto;
   background-color: rgb(34, 33, 33) ;
 }
@@ -58,19 +59,10 @@ body {
     margin-block: auto; /* align vertically */
   }
 
-  main {
-    display: flex;
-    width: 100%;
-    padding: 2%;
-    line-height: 1.6;
-  }
-
   aside {
-    width:32%;
     height: 100%;
     padding: 2%;
     border-radius: 20px;
-    margin-left: 2%;
     overflow: auto;
     background-color: rgba(45, 39, 39, 1);
     background: linear-gradient(180deg, rgb(70, 22, 29) 11%, rgba(69 ,69, 69, 1) 100%) fixed; 
@@ -177,12 +169,12 @@ body {
         background-size: 16px 16px;
       }
 
-      .github:hover {
-        color: rgba(226, 99, 99, 1);
+      .github:link, .github:visited {
+        color: rgba(45, 39, 39, 1);
       }
 
-      .content {
-        width: 68%;
+      .github:hover {
+        color: rgba(226, 99, 99, 1);
       }
 
       input[type=search] {
