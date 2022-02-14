@@ -44,9 +44,7 @@ body {
   header {
     position: sticky;
     top: 0px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 60px;
+    display: flex;
     color: rgba(45, 39, 39, 1);
     max-height: 100px;
     width: 100%;
@@ -125,11 +123,6 @@ body {
         font: italic bold 1.7rem lobster_tworegular, 'Brush Script MT', cursive;
       }
 
-      .logo img {
-        max-width: 18%;
-        margin-inline: 15px;
-      }
-
       .subheading {
         display: block;
         font-weight: 300;
@@ -140,15 +133,25 @@ body {
         color: rgba(45, 39, 39, 1);
       }
 
-      .nav-bar {
-        padding: 0;
+      .header-main {
         display: flex;
+        flex-wrap: wrap;
+      }
+
+      .header-main > * {
+      margin-block: auto;
+      }
+
+      .nav-bar {
+        display: flex;
+        padding: 0;
         justify-content: space-around;
         list-style: none;
       }
 
-      .nav-but {
-        padding: 10px 10px;
+      .nav-but a{
+        display: block;
+        padding: 7px;
         border-radius: 7px;
         text-align: center;
         background-color: rgba(45, 39, 39, 1);
@@ -231,11 +234,23 @@ body {
 
         #first-container, #sec-container{
           display: flex;
-          overflow: hidden;
+          flex-wrap: wrap;
           padding: 2%;
           border-radius: 20px;
           background-color: rgba(45, 39, 39, 1);
           background: linear-gradient(180deg, rgb(70, 22, 29)11%, rgba(69, 69, 69, 1) 100%) fixed; 
+        }
+
+        #first-container div {
+          flex: 1 300px;
+        }
+
+        #first-container h2 {
+          writing-mode: horizontal-tb;
+          text-align: center;
+          border-radius: 10px;
+          margin-block: 2%;
+          background-color: rgba(226, 99, 99, 1);
         }
 
         #sec-container img {
@@ -245,14 +260,6 @@ body {
         #sec-container img:hover, #sec-container img:focus {
           box-shadow: 6px 6px 6px rgba(217, 217, 217, 1);
           transform: scale(1.05, 1.05);
-        }
-
-        #first-container > h2 {
-          writing-mode: vertical-lr;
-          text-align: center;
-          border-radius: 10px;
-          margin-block: 2%;
-          background-color: rgba(226, 99, 99, 1);
         }
 
         #about-box {
@@ -266,12 +273,6 @@ body {
         #about-box ul {
           list-style: none;
         }
-
-
-
-
-
-
 
 
 
