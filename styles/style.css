@@ -45,6 +45,7 @@ body {
     position: sticky;
     top: 0px;
     display: flex;
+    align-items: center;
     color: rgba(45, 39, 39, 1);
     max-height: 100px;
     width: 100%;
@@ -53,13 +54,9 @@ body {
     background-color: rgba(217, 217, 217, 0.9);
   }
 
-  header > * {
-    margin-block: auto; /* align vertically */
-  }
-
   aside {
     height: 100%;
-    padding: 2%;
+    padding: 5%;
     border-radius: 20px;
     overflow: auto;
     background-color: rgba(45, 39, 39, 1);
@@ -112,8 +109,13 @@ body {
 
     /*************/
 
+    nav {
+      flex: 3;
+    }
+
     form {
       position: relative; /* to set the form input's position relative to the form*/
+      flex: 2;
     }
 
       /* classes, atributtes, pseudo-classes */
@@ -134,12 +136,10 @@ body {
       }
 
       .header-main {
+        flex: 1;
         display: flex;
         flex-wrap: wrap;
-      }
-
-      .header-main > * {
-      margin-block: auto;
+        align-items: center;
       }
 
       .nav-bar {
@@ -166,6 +166,7 @@ body {
       }
 
       .github {
+        flex: 1;
         color: rgba(45, 39, 39, 1);
         font: italic bold 1.5rem lobster_tworegular, 'Brush Script MT', cursive;
         background: url(../images/redirect.png) no-repeat 28% 0;
@@ -178,6 +179,13 @@ body {
 
       .github:hover {
         color: rgba(226, 99, 99, 1);
+      }
+
+      .content-grid {
+        display: grid;
+        grid-template-columns: 7fr 3fr;
+        gap: 2%;
+        padding: 1%;
       }
 
       input[type=search] {
@@ -241,6 +249,10 @@ body {
           background: linear-gradient(180deg, rgb(70, 22, 29)11%, rgba(69, 69, 69, 1) 100%) fixed; 
         }
 
+        #first-container {
+          gap: 2%;
+        }
+
         #first-container div {
           flex: 1 300px;
         }
@@ -273,8 +285,6 @@ body {
         #about-box ul {
           list-style: none;
         }
-
-
 
 /* Design pronto para tabela */
 
