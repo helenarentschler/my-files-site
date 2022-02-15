@@ -30,57 +30,58 @@
             </a>
             <div class="header-main">
                 <nav>
-                    <ul class="nav-bar">
-                        <li class="nav-but"><a href="pages/sobre.html">Sobre</a></li>
-                        <li class="nav-but"><a href="pages/opine.html">Opine</a></li>
-                        <li class="nav-but"><a href="">button</a></li>
+                    <ul>
+                        <li ><a class="nav-but" href="pages/sobre.html">Sobre</a></li>
+                        <li ><a class="nav-but" href="pages/opine.html">Opine</a></li>
                     </ul>
                 </nav>
+                <div class="git-container"> 
+                    <a class="github" href="https://github.com/helenarentschler" title="meu perfil no GitHub" target="_blank">
+                        <span>GitHub</span>
+                    </a>
+                </div>
                 <form>
                     <input type="search" name="q" placeholder="buscar">
                     <input type="submit" value="">
                 </form> 
-                <a class="github" href="https://github.com/helenarentschler" title="meu perfil no GitHub" target="_blank">
-                    <span>GitHub</span>
-                </a>
             </div>
         </header>
         <div class="content-grid">
             <main>
-                <audio controls>
-                    <source src="audios/Cadmium.mp3" type="audio/mp3">
-                    <source src="audios/Cadmium.ogg" type="audio/ogg">
-                    <p>Seu navegador não suporta este formato, aqui está um <a href="audios/Cadmium.mp3">link direto</a> para o áudio.</p>
-                </audio>
-                <h1>Últimas publicações</h1>
-                <section id="first-container">
-                    <div>
-                        <h2>Psicanálise</h2>
-                        <a href="pages/article4.html">
-                            <h3>O seminário de Jacques Lacan: Os escritos técnicos de Freud</h3>
-                        </a>
-                        <p>Análise da abertura de seminário: "O pensamento de Freud talvez seja o mais perpetuamente aberto à revisão, aí se dá a dialética.”</p>
-                    </div>
-                    <div>
-                        <h2>Ciências</h2>
-                        <a href="pages/article3.html">
-                            <h3>Experimento: A reflexão total da luz e a fibra óptica</h3>
-                        </a>
-                        <p>Em um painel óptico, observou-se a incidência de um feixe de luz no dioptro de acrílico passando para o ar, com um aumento no ângulo de incidência até um limite crítico em que a refração foi rasante.</p>
+                <section>
+                    <h1>Últimas publicações</h1>
+                    <div id="first-container">
+                        <div>
+                            <h2>Psicanálise</h2>
+                            <div>
+                                <a href="pages/article4.html">
+                                    <h3>O seminário de Jacques Lacan: Os escritos técnicos de Freud</h3>
+                                </a>
+                                <p>Análise da abertura de seminário: "O pensamento de Freud talvez seja o mais perpetuamente aberto à revisão, aí se dá a dialética.”</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>Ciências</h2>
+                            <div>
+                                <a href="pages/article3.html">
+                                    <h3>Experimento: A reflexão total da luz e a fibra óptica</h3>
+                                </a>
+                                <p>Em um painel óptico, observou-se a incidência de um feixe de luz no dioptro de acrílico passando para o ar, com um aumento no ângulo de incidência até um limite crítico em que a refração foi rasante.</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
-                <h1>Galeria</h1>
-                <section id="sec-container">
-                    <!-- Following, responsive design applied to different image sizes-->
-                    <img srcset="images/pintura-100.jpg 100w, 
-                                images/pintura-300.jpg 300w" 
-                        sizes="(max-width:600px) 100px, 300px"
-                        src="images/pintura-300.jpg" 
-                        alt="pintura de um homem encapuzado com máscara de respiração coberta por fungos com marcas de carvão no braço"> 
-                    <a href="pages/article.html#freud" title="do artigo: 'Análise Freudiana das Memórias encobridoras'">
-                        <img src="images/freud2.jpg" alt="">
-                    </a>
-                </section> 
+                <section>
+                    <h1>Galeria</h1>
+                    <div id="sec-container">
+                        <!-- Following, responsive design applied to different image sizes-->
+                        <img srcset="images/pintura-100.jpg 100w, 
+                                    images/pintura-300.jpg 300w" 
+                            sizes="(max-width:600px) 100px, 300px"
+                            src="images/pintura-300.jpg" 
+                            alt="pintura de um homem encapuzado com máscara de respiração coberta por fungos com marcas de carvão no braço"> 
+                    </div> 
+                </section>
             </main>
             <aside>
                 <h2>Acervo</h2>

@@ -15,9 +15,9 @@
 }
 
 html {
-  color: rgba(217, 217, 217, 1);
   font: 16px robotoregular, Helvetica, arial, sans-serif;
-  box-sizing: border-box;
+  box-sizing:border-box;
+  color: rgba(217, 217, 217, 1);
   background-color: rgb(190,190,190);
 }
 
@@ -25,9 +25,9 @@ html {
   box-sizing: inherit;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   html {
-    font-size: 14px;
+    font-size: 2vh;
   }
 }
 
@@ -45,17 +45,17 @@ body {
     position: sticky;
     top: 0px;
     display: flex;
+    gap: calc(5px + 5%);
     align-items: center;
-    color: rgba(45, 39, 39, 1);
-    max-height: 100px;
+    max-height: 120px;
     width: 100%;
-    padding: 0.5%;
+    padding: 20px;
     margin: 0;
+    color: rgba(45, 39, 39, 1);
     background-color: rgba(217, 217, 217, 0.9);
   }
 
   aside {
-    height: 100%;
     padding: 5%;
     border-radius: 20px;
     overflow: auto;
@@ -64,9 +64,9 @@ body {
   }
 
   footer {
-    color: rgba(45, 39, 39, 1);
     max-height: 120px;
     padding: 2%;
+    color: rgba(45, 39, 39, 1);
     background-color: rgba(217, 217, 217, 1);
   }
 
@@ -113,15 +113,25 @@ body {
       flex: 3;
     }
 
+    nav ul{
+      display: flex;
+      gap: calc(5px + 5%);
+      justify-content: space-around;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
     form {
+      flex: 3;
       position: relative; /* to set the form input's position relative to the form*/
-      flex: 2;
     }
 
       /* classes, atributtes, pseudo-classes */
 
       .logo {
         display: flex;
+        gap: 5px;
         font: italic bold 1.7rem lobster_tworegular, 'Brush Script MT', cursive;
       }
 
@@ -139,17 +149,11 @@ body {
         flex: 1;
         display: flex;
         flex-wrap: wrap;
+        gap:calc(10px + 5%);
         align-items: center;
       }
 
-      .nav-bar {
-        display: flex;
-        padding: 0;
-        justify-content: space-around;
-        list-style: none;
-      }
-
-      .nav-but a{
+      .nav-but {
         display: block;
         padding: 7px;
         border-radius: 7px;
@@ -165,12 +169,14 @@ body {
         background-color: rgb(190,190,190);
       }
 
+      .git-container {
+        flex: 2
+      }
+
       .github {
-        flex: 1;
         color: rgba(45, 39, 39, 1);
         font: italic bold 1.5rem lobster_tworegular, 'Brush Script MT', cursive;
-        background: url(../images/redirect.png) no-repeat 28% 0;
-        background-size: 16px 16px;
+        background-size: 16px 16px; 
       }
 
       .github:link, .github:visited {
@@ -184,15 +190,15 @@ body {
       .content-grid {
         display: grid;
         grid-template-columns: 7fr 3fr;
-        gap: 2%;
-        padding: 1%;
+        gap: 15px;
+        padding: 15px;
       }
 
       input[type=search] {
         color: rgba(217, 217, 217, 1);
         font-family: inherit;
         font-size: 0.8rem;
-        min-width: 100px;
+        min-width: 160px;
         width: 100%;
         padding-left: 10px;
         padding-block: 4px;
@@ -243,42 +249,36 @@ body {
         #first-container, #sec-container{
           display: flex;
           flex-wrap: wrap;
-          padding: 2%;
+          gap: 10px;
+          padding: 15px;
           border-radius: 20px;
           background-color: rgba(45, 39, 39, 1);
           background: linear-gradient(180deg, rgb(70, 22, 29)11%, rgba(69, 69, 69, 1) 100%) fixed; 
         }
 
-        #first-container {
-          gap: 2%;
-        }
-
-        #first-container div {
+        #first-container > div {
           flex: 1 300px;
+          display: flex;
         }
 
         #first-container h2 {
-          writing-mode: horizontal-tb;
+          writing-mode:vertical-lr;
           text-align: center;
           border-radius: 10px;
-          margin-block: 2%;
+          margin: 10px;
           background-color: rgba(226, 99, 99, 1);
         }
 
-        #sec-container img {
-          margin-right: 2%;
-        }
-
         #sec-container img:hover, #sec-container img:focus {
-          box-shadow: 6px 6px 6px rgba(217, 217, 217, 1);
+          box-shadow: 3px 3px 3px rgba(217, 217, 217, .5);
           transform: scale(1.05, 1.05);
         }
 
         #about-box {
-          padding: 2%;
+          padding: 10px;
           border-radius: 20px;
           background-color: rgba(217, 217, 217, 1);
-          background: url(../images/icon.svg) no-repeat bottom 50px right 50px/15%,
+          background: url(../images/icon.svg) no-repeat bottom 5% right 5%/15%,
                       linear-gradient(180deg, rgb(70, 22, 29) 11%, rgba(69 ,69, 69, 1) 100%) fixed; 
         }
 
@@ -298,7 +298,7 @@ table {
   
   td, th {
     border: 1px solid rgb(190,190,190);
-    padding: 10px 20px;
+    padding: 5px 5px;
   }
   
   th {
