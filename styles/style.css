@@ -71,7 +71,7 @@ body {
     border-radius: 20px;
     overflow: auto;
     background-color: rgba(45, 39, 39, 1);
-    background: linear-gradient(180deg, rgb(70, 22, 29) 11%, rgba(69 ,69, 69, 1) 100%) fixed; 
+    background: linear-gradient(180deg, rgb(70, 22, 29) 11%, rgba(69, 69, 69, 1) 100%) fixed; 
   }
 
   footer {
@@ -141,13 +141,22 @@ body {
         display: flex;
         gap: 8px;
         align-items: center;
-        font: italic bold 1.4rem lobster_tworegular, 'Brush Script MT', cursive;
+        font: italic bold 1.6rem lobster_tworegular, 'Brush Script MT', cursive;
       }
 
       .subheading {
         display: block;
         font-weight: 300;
         font-size: 1rem;
+      }
+
+      @media screen and (max-width: 550px) {
+        .logo {
+          font-size: 1.4rem;
+        }
+        .subheading {
+          font-size: 1rem;
+        }
       }
 
       .logo:link, .logo:visited {
@@ -298,7 +307,7 @@ body {
 
         #sec-container img:hover, #sec-container img:focus {
           box-shadow: 3px 3px 3px rgba(217, 217, 217, .5);
-          transform: scale(1.05, 1.05);
+          transform: scale(1.15, 1.15);
         }
 
         @media screen and (max-width: 550px) {
