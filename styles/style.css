@@ -49,7 +49,7 @@ body {
     align-items: center;
     max-height: 120px;
     width: 100%;
-    padding: 15px;
+    padding: 18px;
     margin: 0;
     z-index: 1;
     color: rgba(45, 39, 39, 1);
@@ -299,6 +299,12 @@ body {
         #sec-container img:hover, #sec-container img:focus {
           box-shadow: 3px 3px 3px rgba(217, 217, 217, .5);
           transform: scale(1.05, 1.05);
+        }
+
+        @media screen and (max-width: 550px) {
+          #sec-container img:hover, #sec-container img:focus {
+            transform: scale(1.5, 1.5);
+          }
         }
 
         #about-box {
